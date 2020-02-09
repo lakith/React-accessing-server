@@ -6,7 +6,7 @@ class NewPost extends Component {
     state = {
         title: '',
         content: '',
-        author: 'Max'
+        author: 'Lakith'
     }
 
     render () {
@@ -19,8 +19,8 @@ class NewPost extends Component {
                 <textarea rows="4" value={this.state.content} onChange={(event) => this.setState({content: event.target.value})} />
                 <label>Author</label>
                 <select value={this.state.author} onChange={(event) => this.setState({author: event.target.value})}>
-                    <option value="Max">Lakith</option>
-                    <option value="Manu">Sachin</option>
+                    <option value="Lakith">Lakith</option>
+                    <option value="Sachin">Sachin</option>
                 </select>
                 <button>Add Post</button>
             </div>
